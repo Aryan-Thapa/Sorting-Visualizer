@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>Sorting Visualizer</h1>
+    </div>
+
+    <div class="container">
+        <div class="complexity">
+            <div class="tc">
+                <p class="tcc">Time Complexity</p>
+                <p class="tcc">Worst Case</p>
+                <p id="wctc" class="tcc">O(?)</p>
+                <p class="tcc">Average Case</p>
+                <p id="actc" class="tcc">O(?)</p>
+                <p class="tcc">Best Case</p>
+                <p id="bctc" class="tcc">O(?)</p>
+            </div>
+
+            <div class="sc">
+                <p class="scc">Space Complexity</p>
+                <p id="sc" class="scc">O(?)</p>
+            </div>
+        </div>
+
+        <div class="main" id="arraycont">
+            <p> </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="slider">
+            <!-- <p>Adjust speed</p>
+            <input id="arrspeed" type="range" min=1 max=5 step=1 value=3> -->
+            <p>Size of array</p>
+            <input id="arrsize" type="range" min=20 max=100 step=1 value=20>
+        </div>
+
+        <div class="buttons">
+            <button class="btn" onclick="init()">New Array</button>
+            <button class="btn" onclick="play()">Bubble Sort</button>
+            <!-- <button class="btn" onclick="play4()">Merge Sort</button> -->
+            <button class="btn" onclick="play2()">Insertion Sort</button>
+            <button class="btn" onclick="play3()">Quick Sort</button>
+            <button class="btn" onclick="play5()">Heap Sort</button>
+            <button class="btn" onclick="play6()">Selection Sort</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="insertionsort.js"></script>
+    <script src="quicksort.js"></script>
+    <!-- <script src="mergesort.js"></script> -->
+    <script src="heapsort.js"></script>
+    <script src="selectionsort.js"></script>
+</body>
+</html>

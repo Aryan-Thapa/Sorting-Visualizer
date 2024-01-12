@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #E0FFFF;
+}
+.nav{
+    width: 100%;
+    padding: 1rem;
+    background-color: #002244;
+/* background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%); */
+
+    color: aliceblue;
+}
+.container{
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+.complexity{   
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.tc{
+    padding: 1rem;
+    height: 55%;
+    width: 80%;
+    margin: auto;
+    border-radius: 1.5rem;
+    background-color: #002244;
+    color: white;
+
+}
+.tcc{
+    padding: 0.5rem;
+    font-size: 1.15rem;
+}
+.sc{
+    padding: 1rem;
+    height: 25%;
+    width: 80%;
+    margin: auto;
+    background-color: #002244;
+    color: white;
+    border-radius: 1.5rem;
+}
+.scc{
+    padding: 0.5rem;
+    font-size: 1.15rem;
+}
+
+.main{
+    max-width: 80%;
+    display: flex;
+    margin-left: 10rem;
+    justify-content: center;
+    align-items: flex-end;
+}
+.footer{
+    display: flex;
+    width: 100%;
+    height: 20.3%;
+    background-color: #002244;
+}
+.slider{
+    width: 20%;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.buttons{
+    padding: 1rem;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 1.3rem;
+    border-radius: 1rem;
+    border-color: rgb(131, 131, 225);
+    background-color:#60b3bc;
+    color: azure;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #25be57;
+    color: white;
+    border-color: greenyellow;
+    box-shadow: 4px 3px 7px #002244;
+}
+.bar{
+    background-color: #60b3bc;
+    width: 3rem;
+    margin: 1px;
+}
+
+@media screen and (max-width:1310px) 
+{
+    .tcc{
+        font-size: 0.77rem;
+    }
+    .scc{
+        font-size: 0.77rem;
+    }
+    
+}
+
+@media screen and (max-width:800px) 
+{
+    .buttons{
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width:450px) 
+{
+    .nav{
+        
+    }
+    .tc{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0.3rem;
+        height: 50%;
+        width: 95%;
+    }
+    .sc{
+        padding: 0.3rem;
+        height: 20%;
+        width: 95%;
+    }
+    .tcc{
+        width: 100%;
+    }
+    .buttons{
+        flex-wrap: wrap;
+
+    }
+    .btn{
+        padding: 0.2rem;
+    }
+    .main{
+        width: 40%;
+        margin-left: 5rem;
+    }
+    .footer{
+        height: 25%;
+    }
+    
+}
