@@ -146,9 +146,10 @@ body{
     .btn{
         padding: 0.2rem;
     }
-    .main{
-        width: auto;
-        margin-left: 5rem;
+    .main {
+        max-width: 100%;
+        
+        margin:0;
     }
     .footer{
         height: 25%;
@@ -156,5 +157,7 @@ body{
     .complexity{
         display: none;
     }
-    
 }
+
+
+    
